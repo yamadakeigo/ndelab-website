@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../app.css';
 	import { onMount } from 'svelte';
 	import { cubicOut } from 'svelte/easing';
 
@@ -50,18 +51,18 @@
 	<!-- ヘッダー -->
 	<header class="fixed top-0 left-0 z-50 flex flex-col sm:flex-row items-center justify-between px-8 py-4 w-full bg-white/70 backdrop-blur-sm shadow-sm">
 		<div class="flex items-center space-x-4">
-		  <img src="/Cultural Heritage.png" alt="ロゴ" class="h-16 w-auto object-contain" />
+		  <img src="/log.png" alt="ロゴ" class="h-16 w-auto object-contain" />
 		  <span class="text-2xl sm:text-3xl font-semibold text-gray-800">
 			非破壊センシング研究室
 		  </span>
 		</div>
 	  
-		<nav class="flex space-x-6 mt-4 sm:mt-0 text-2xl sm:text-3xl font-medium text-gray-700">
-			<a href="/" class="hover:text-black hover:underline">Home</a>
-			<a href="/about" class="hover:text-black hover:underline">About</a>
-			<a href="/members" class="hover:text-black hover:underline">Members</a>
-			<a href="/contact" class="hover:text-black hover:underline">Access</a>
-		  </nav>
+		<nav class="flex space-x-4 mt-4 sm:mt-0 text-xl sm:text-2xl font-medium pr-10 sm:pr-20">
+		  <a href="/" class="text-gray-500 hover:text-black">Home</a>
+		  <a href="/about" class="text-gray-500 hover:text-black">About</a>
+		  <a href="/members" class="text-gray-500 hover:text-black">Members</a>
+		  <a href="/contact" class="text-gray-500 hover:text-black">Access</a>
+		</nav>
 	  </header>
 
 	<!-- 空白セクション（スクロール領域） -->
@@ -77,4 +78,7 @@
 			非破壊・非接触で診断することに有益な情報を抽出します。
 		  </h2>
 	</div>
+	<!-- layout.svelte の最後にこれがないと中身が一切表示されません -->
+<slot />
 </div>
+<!-- layout.svelte の最後にこれがないと中身が一切表示されません -->
