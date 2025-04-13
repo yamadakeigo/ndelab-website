@@ -50,10 +50,10 @@
 	<!-- ヘッダー -->
 	<header class="fixed top-0 left-0 z-50 flex flex-col sm:flex-row items-center justify-between px-8 py-4 w-full bg-white/70 backdrop-blur-sm shadow-sm">
 		<div class="flex items-center space-x-4">
-			<img src="/log.png" alt="ロゴ" class="h-16 w-auto object-contain" />
+			<img src="/log.png" alt="ロゴ" class="h-20 w-auto object-contain" />
 			<span class="text-2xl sm:text-3xl font-semibold text-gray-800">非破壊センシング研究室</span>
 		</div>
-		<nav class="flex space-x-4 mt-4 sm:mt-0 text-xl sm:text-2xl font-medium pr-10 sm:pr-20">
+		<nav class="flex space-x-8 mt-4 sm:mt-0 text-xl sm:text-2xl font-medium pr-10 sm:pr-20">
 			<a href="/" class="text-gray-500 hover:text-black">Home</a>
 			<a href="/about" class="text-gray-500 hover:text-black">About</a>
 			<a href="/members" class="text-gray-500 hover:text-black">Members</a>
@@ -113,6 +113,34 @@
 		</div>
 	</section>
 
-	<!-- ページの中身を表示 -->
+<!-- Links セクション -->
+<section class="relative z-10">
+	<div class="bg-white py-24 px-6 sm:px-16">
+		<h2 class="text-4xl sm:text-5xl font-bold text-gray-800 text-center mb-12">Links</h2>
+		
+		<!-- 親に flex + justify-center を追加 -->
+<div class="max-w-5xl mx-auto flex justify-center">
+	<a
+		href="https://ims.ynu.ac.jp/"
+		target="_blank"
+		rel="noopener noreferrer"
+		class="block bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500"
+	>
+	<p class="text-2xl font-extrabold text-gray-600 tracking-tight leading-relaxed">
+		横浜国立大学<br />総合学術高等研究院
+	</p>
+	</a>
+</div>
+		
+	</div>
+</section>
+
+<!-- フッター（E-Mail & コピーライト） -->
+<footer class="bg-gray-300 py-8">
+	<div class="max-w-4xl mx-auto text-center text-sm text-gray-600 space-y-2">
+		<p>E-Mail : XXXX@XXXX</p>
+		<p>© YOKOHAMA National University All rights reserved.</p>
+	</div>
+</footer>
 	<slot />
 </div>
