@@ -2,13 +2,14 @@
 	import '../app.css';
 	import { onMount } from 'svelte';
 	import { cubicOut } from 'svelte/easing';
+	import { topics as allTopics, type Topic } from '$lib/topics';
 
+	// 背景フェード用
 	let topOpacity = 1;
-
 	const handleScroll = () => {
 		const scrollY = window.scrollY;
 		const height = window.innerHeight;
-		const ratio = Math.min(scrollY / height, 1); // 0〜1に制限
+		const ratio = Math.min(scrollY / height, 1);
 		topOpacity = 1 - cubicOut(ratio);
 	};
 
@@ -17,6 +18,12 @@
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
+
+	// Topics 表示切替と並び替え
+	let showAll = false;
+	const sortedTopics = [...allTopics].sort((a, b) => b.date.localeCompare(a.date));
+	const latestTopics = sortedTopics.slice(0, 4);
+	const olderTopics = sortedTopics.slice(4);
 </script>
 
 <style>
@@ -34,38 +41,27 @@
 	}
 </style>
 
-<!-- 背景2: slide2（常に表示） -->
-<div
-	class="bg-layer"
-	style="background-image: url('/slide2.jpg'); opacity: 1;"
-></div>
+<!-- 背景 -->
+<div class="bg-layer" style="background-image: url('/slide2.jpg'); opacity: 1;"></div>
+<div class="bg-layer bg-top" style="background-image: url('/slide1.jpg'); opacity: {topOpacity};"></div>
 
-<!-- 背景1: slide1（上に重ねて opacity を減らす） -->
-<div
-	class="bg-layer bg-top"
-	style="background-image: url('/slide1.jpg'); opacity: {topOpacity};"
-></div>
-
-<!-- メインページ構成 -->
+<!-- 全体構成 -->
 <div class="min-h-[200vh] relative">
 	<!-- ヘッダー -->
 	<header class="fixed top-0 left-0 z-50 flex flex-col sm:flex-row items-center justify-between px-8 py-4 w-full bg-white/70 backdrop-blur-sm shadow-sm">
 		<div class="flex items-center space-x-4">
-		  <img src="/log.png" alt="ロゴ" class="h-16 w-auto object-contain" />
-		  <span class="text-2xl sm:text-3xl font-semibold text-gray-800">
-			非破壊センシング研究室
-		  </span>
+			<img src="/log.png" alt="ロゴ" class="h-16 w-auto object-contain" />
+			<span class="text-2xl sm:text-3xl font-semibold text-gray-800">非破壊センシング研究室</span>
 		</div>
-	  
 		<nav class="flex space-x-4 mt-4 sm:mt-0 text-xl sm:text-2xl font-medium pr-10 sm:pr-20">
-		  <a href="/" class="text-gray-500 hover:text-black">Home</a>
-		  <a href="/about" class="text-gray-500 hover:text-black">About</a>
-		  <a href="/members" class="text-gray-500 hover:text-black">Members</a>
-		  <a href="/contact" class="text-gray-500 hover:text-black">Access</a>
+			<a href="/" class="text-gray-500 hover:text-black">Home</a>
+			<a href="/about" class="text-gray-500 hover:text-black">About</a>
+			<a href="/members" class="text-gray-500 hover:text-black">Members</a>
+			<a href="/contact" class="text-gray-500 hover:text-black">Access</a>
 		</nav>
-	  </header>
+	</header>
 
-	<!-- 空白セクション（スクロール領域） -->
+	<!-- 空白 -->
 	<div class="h-screen"></div>
 
 	<!-- フッターセクション -->
@@ -76,9 +72,47 @@
 			検出・画像化することにより観察する研究をしています。<br />
 			得られたデータを解析することで，モノの健全性を<br />
 			非破壊・非接触で診断することに有益な情報を抽出します。
-		  </h2>
+		</h2>
 	</div>
-	<!-- layout.svelte の最後にこれがないと中身が一切表示されません -->
-<slot />
+
+	<!-- Topicsセクション -->
+	<section class="relative z-10">
+		<div class="bg-white/70 backdrop-blur-sm py-24 px-6 sm:px-16">
+			<h2 class="text-4xl sm:text-5xl font-bold text-gray-800 text-center mb-12">Topics</h2>
+
+			<ul class="space-y-8 max-w-5xl mx-auto">
+				{#each latestTopics as topic (topic.id)}
+					<li class="border-b pb-4">
+						<p class="text-gray-500 text-sm mb-1">{topic.date}</p>
+						<p class="text-gray-800 font-semibold">{topic.category}</p>
+						<p class="text-gray-700">{topic.content}</p>
+					</li>
+				{/each}
+
+				{#if showAll}
+					{#each olderTopics as topic (topic.id)}
+						<li class="border-b pb-4">
+							<p class="text-gray-500 text-sm mb-1">{topic.date}</p>
+							<p class="text-gray-800 font-semibold">{topic.category}</p>
+							<p class="text-gray-700">{topic.content}</p>
+						</li>
+					{/each}
+				{/if}
+			</ul>
+
+			{#if olderTopics.length > 0}
+				<div class="text-center mt-8">
+					<button
+						class="text-lg font-medium transition-colors duration-200 text-gray-500 hover:text-black hover:no-underline"
+						on:click={() => (showAll = !showAll)}
+					>
+						{showAll ? '一覧を閉じる' : '一覧を見る'}
+					</button>
+				</div>
+			{/if}
+		</div>
+	</section>
+
+	<!-- ページの中身を表示 -->
+	<slot />
 </div>
-<!-- layout.svelte の最後にこれがないと中身が一切表示されません -->
