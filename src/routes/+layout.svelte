@@ -39,7 +39,7 @@
 	.bg-top {
 		z-index: -5;
 	}
-</style>
+</style> <!-- ←これが必要！ -->
 
 <!-- 背景 -->
 <div class="bg-layer" style="background-image: url('/slide2.jpg'); opacity: 1;"></div>
