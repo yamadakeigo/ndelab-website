@@ -32,16 +32,32 @@
 <div class="bg-white bg-opacity-90 px-6 sm:px-16 py-16">
 	<div class="max-w-6xl mx-auto space-y-20">
 		
-		<!-- プロジェクト1 -->
-		<div class="flex flex-col md:flex-row items-start md:items-start gap-6 md:gap-12">
-			<div class="flex-1">
-				<h2 class="text-2xl font-bold text-gray-800 mb-2">1.分析・センシング技術開発・データフュージョン</h2>
-				<p class="text-gray-700 leading-relaxed max-w-[50ch] text-left">
-					文化財調査に適用するための計測装置の改良に加え，様々な周波数帯域の非破壊検査技術で得られたデータの比較解析を情報系の技術を用いて高度化します。
-				</p>
-			</div>
-			<div class="w-full md:w-[280px] flex-shrink-0">
-				<img src="/prj1.png" alt="分析・センシング" class="rounded-lg shadow-md w-full h-auto object-cover" />
+		<div class="flex flex-col gap-6 md:gap-8">
+			<!-- タイトル：上に表示 -->
+			<h2 class="text-2xl font-bold text-gray-800">
+				1.分析・センシング技術開発・データフュージョン
+			</h2>
+		
+			<!-- 説明文と画像を横並び（上辺揃え） -->
+			<div class="flex flex-col md:flex-row items-start gap-6 md:gap-20">
+				<!-- 説明文（左） -->
+				<div class="flex-1">
+					<p class="text-gray-700 leading-relaxed max-w-[50ch] text-left">
+						文化財調査に適用するための計測装置の改良に加え，様々な周波数帯域の非破壊検査技術で得られたデータの比較解析を情報系の技術を用いて高度化します。
+					</p>
+				</div>
+		
+				<!-- 画像＋キャプション（右） -->
+				<div class="w-full md:w-[600px] flex-shrink-0">
+					<img
+						src="/prj1.png"
+						alt="分析・センシング"
+						class="rounded-lg shadow-md w-full h-auto object-cover mb-2"
+					/>
+					<p class="text-sm text-gray-600 text-center">
+						▲ マイクロ波センサーと解析結果の可視化イメージ
+					</p>
+				</div>
 			</div>
 		</div>
 
