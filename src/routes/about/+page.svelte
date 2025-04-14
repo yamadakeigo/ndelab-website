@@ -24,3 +24,8 @@
 		using it with JavaScript disabled!
 	</p>
 </div>
+<script lang="ts">
+	// グローバル共通の設定など
+  </script>
+  
+  <slot />
