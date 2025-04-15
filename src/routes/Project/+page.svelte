@@ -139,4 +139,13 @@
 		</div>
 
 	</div>
+	
 </div>
+<!-- フッター（E-Mail & コピーライト） -->
+<footer class="bg-gray-300 py-8">
+	<div class="max-w-4xl mx-auto text-center text-sm text-gray-600 space-y-2">
+		<p>E-Mail : XXXX@XXXX</p>
+		<p>© YOKOHAMA National University All rights reserved.</p>
+	</div>
+</footer>
+	<slot />

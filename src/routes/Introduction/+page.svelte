@@ -23,7 +23,7 @@
 <!-- タイトル（背景画像の上） -->
 <div class="pt-40 pb-16 px-6 sm:px-16">
 	<h1 class="text-4xl sm:text-5xl font-bold text-white text-left drop-shadow-xl">
-		Project
+		Introduction
 	</h1>
 </div>
 
@@ -35,108 +35,111 @@
 				<!-- プロジェクト1 -->
 		<div class="space-y-6">
 			<h2 class="text-2xl font-bold text-gray-800">
-				1.分析・センシング技術開発・データフュージョン
+				文化財科学とは
 			</h2>
 
 			<p class="text-gray-700 leading-relaxed text-left w-full">
-				文化財調査に適用するための計測装置の改良に加え，様々な周波数帯域の非破壊検査技術で得られたデータの比較解析を情報系の技術を用いて高度化します。
+				文化財科学は、人類共通の財産である文化財を次世代に伝えるため、文化財が内包する価値を顕在化するとともに破壊・破損・劣化後の作品の修復保存に役立つ調査・診断を行う学問で、EU諸国では応用物理、地学など科学技術系の研究分野として扱われています。
 			</p>
+		</div>
 
-			<div class="w-full">
-				<img
-					src="/prj1.png"
-					alt="分析・センシング"
-					class="rounded-lg shadow-md w-full h-auto object-cover"
-				/>
-				<p class="text-sm text-gray-600 text-center mt-2">
-					▲ マイクロ波センサーと解析結果の可視化イメージ
+		<div class="space-y-8">
+			<!-- メイン見出し -->
+			<h2 class="text-2xl font-bold text-gray-800">
+				文化財を科学的に調査する目的
+			</h2>
+		
+			<!-- 小見出し1：作品を知るため -->
+			<div class="space-y-4">
+				<!-- 小見出しと本文 -->
+				<div class="space-y-2">
+					<h3 class="text-xl font-semibold text-gray-700">
+						1.作品を知るため：
+					</h3>
+					<p class="text-gray-700 leading-relaxed">
+						作品の意匠や歴史上での位置付けなど、美術史的な研究に必要な情報を提供します。
+						例えば，デザイン性の高い作品を多く残している尾形光琳の技法が、時代によって変化した様子が、金箔の貼り方から推定できました。
+					</p>
+			
+					<!-- 参考リンク -->
+					<p class="text-sm text-gray-600 text-left">
+						参考の報道発表：
+						<a
+							href="https://www.nict.go.jp/press/2012/10/30-1.html"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="underline hover:text-black break-all"
+						>
+							https://www.nict.go.jp/press/2012/10/30-1.html
+						</a>
+					</p>
+				</div>
+			
+				<!-- 画像挿入スペース -->
+				<div class="mt-6">
+					<img
+						src="/zu1.jpg"
+						alt="尾形光琳の技法分析図"
+						class="rounded-lg shadow-md w-full max-w-2xl mx-auto object-contain bg-white"
+					/>
+					<p class="text-sm text-gray-600 text-center mt-2">
+						メトロポリタン美術館（NY, USA)での尾形光琳作「八橋図屏風」の調査例
+					</p>
+				</div>
+				<!-- 左下にRefを表示（小見出しと左端を揃え、下に余白） -->
+				<div class="text-sm text-gray-600 mt-2 mb-8 text-left">
+					Ref: M. Leona, P. S. Londero, J. Perry, K. Fukunaga, G. H. Bailey, C. Hale<br />
+					<a
+						href="https://doi.org/10.1039/9781839161957-00336"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="underline hover:text-black break-all"
+					>
+						DOI: https://doi.org/10.1039/9781839161957-00336 (2014)
+					</a>
+				</div>
+			</div>
+			
+		
+			<!-- 小見出し2：作品を後世に伝えるため -->
+			<div class="space-y-2">
+				<h3 class="text-xl font-semibold text-gray-700">
+					2.作品を後世に伝えるため：
+				</h3>
+				<p class="text-gray-700 leading-relaxed">
+					人間が手術前に時間と予算があれば様々な検査をするように、今の構造・材料の状態（＝症状）に加え、過去の修復履歴（＝病歴）も知る必要がある。その記録は次世代の修復のための貴重な記録となる。
 				</p>
 			</div>
 		</div>
 
 		<div class="space-y-6">
 			<h2 class="text-2xl font-bold text-gray-800">
-				2.考古出土品データ分類・解析への機械学習・AI技術の活用
+				横浜国立大学の文化財科学研究拠点
 			</h2>
 		
 			<p class="text-gray-700 leading-relaxed text-left w-full">
-				出土品の分類に機械学習等を用いることにより新しい知見が得られ，地球規模での芸術文化の流れを俯瞰できる可能性があります。
+				総合大学である横浜国立大学には、分析・センシング技術の研究者が多く、様々な計測法を比較・統合できます。また、AI応用等、情報系の研究者の協力により実験データと人文系の知識を融合することで人類が地球上で創造してきた文化の歴史を時空間で俯瞰する「地球文化財学」へ発展させることができます。
 			</p>
-		
-			<!-- リンク -->
-			<div class="space-y-1 text-gray-700 text-left">
-				<p>(参考)インドからローマまで</p>
-				<a href="https://www.nabunken.go.jp/nabunkenblog/2018/06/20180615.html" class="underline hover:text-black" target="_blank" rel="noopener noreferrer">
-					https://www.nabunken.go.jp/nabunkenblog/2018/06/20180615.html
-				</a>
-				<a href="https://www.youtube.com/watch?v=QAn0OxNwaUA" class="underline hover:text-black" target="_blank" rel="noopener noreferrer">
-					https://www.youtube.com/watch?v=QAn0OxNwaUA
-				</a>
-			</div>
-		
-			<!-- 画像1 -->
-						<!-- 画像1 -->
-			<div class="space-y-2">
-				<img
-					src="/prj2-1.jpg"
-					alt="出土品AI解析1"
-					class="rounded-lg shadow-md w-full object-contain bg-white"
-				/>
-				<p class="text-lg font-semibold text-gray-700 text-center">
-					出土品分類に使用されたAIモデル図
-				</p>
-				<p class="text-sm text-gray-700 text-center">
-					AIによる出土品の分類プロセスを図示したもの。形状・模様などの特徴を自動抽出し、学習済みモデルが分類を行う。
-				</p>
-				<p class="text-sm text-gray-600 text-center">
-					<a
-						href="https://sitereports.nabunken.go.jp/ja/16564"
-						class="underline hover:text-black"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						https://sitereports.nabunken.go.jp/ja/16564
-					</a>
-				</p>
-				<div class="h-16"></div> <!-- 約64pxのスペースが空きます -->
-				
-			</div>
-					<!-- 画像2（縮小） -->
-				<div class="space-y-2 flex flex-col items-center mt-30">
-					<img
-						src="/prj2-2.png"
-						alt="出土品AI解析2"
-						class="rounded-lg shadow-md w-full max-w-md object-contain bg-white"
-					/>
-					<p class="text-lg font-semibold text-gray-700 text-center">
-						高野孟「最新・世界地図の読み方」
-					</p>
-					<p class="text-sm text-gray-600 text-center">
-						（講談社現代新書）に提示されている「受け皿としての日本」モデル
-					</p>
-				</div>
-		</div>
 
-		<!-- プロジェクト3 -->
-		<div class="flex flex-col md:flex-row items-start md:items-start gap-6 md:gap-12">
-			<div class="flex-1">
-				<h2 class="text-2xl font-bold text-gray-800 mb-2">3.石造文化財の表面劣化のメカニズム解明</h2>
-				<p class="text-gray-700 leading-relaxed w-full text-left">
-					温度湿度の変化が主な原因と考えられている石造文化財の表面劣化のメカニズムを理論的に解明し，遺跡など様々な作品の保存修復に貢献します。
-				</p>
-				<div class="mt-4 space-y-1 text-gray-700 w-full text-left">
-					<p>(参考) 石のあかぎれ</p>
-					<a
-						href="https://www.nabunken.go.jp/nabunkenblog/2021/09/20210915.html"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="underline hover:text-black"
-					>
-						https://www.nabunken.go.jp/nabunkenblog/2021/09/20210915.html
-					</a>
-				</div>
-			</div>
+			<div class="space-y-2">
+			<img
+				src="/zu2.jpg"
+				alt="文化財科学研究拠点"
+				class="rounded-lg shadow-md max-w-xl mx-auto object-contain bg-white"
+			/>
+
+			<div class="h-16"></div> <!-- 約64pxのスペースが空きます -->
+		</div>		<!-- 画像2（縮小） -->
+				
 		</div>
 
 	</div>
 </div>
+<!-- フッター（E-Mail & コピーライト） -->
+<footer class="bg-gray-300 py-8">
+	<div class="max-w-4xl mx-auto text-center text-sm text-gray-600 space-y-2">
+		<p>E-Mail : XXXX@XXXX</p>
+		<p>© YOKOHAMA National University All rights reserved.</p>
+	</div>
+</footer>
+	<slot />
