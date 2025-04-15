@@ -3,62 +3,140 @@
 	$: currentPath = $page.url.pathname;
 </script>
 
+<!-- 背景画像（ぼかしなし） -->
+<div class="fixed inset-0 bg-cover bg-center z-[-10]" style="background-image: url('/slide2.jpg')"></div>
+
 <!-- ヘッダー -->
-<header class="fixed top-0 left-0 z-50 flex flex-col sm:flex-row items-center justify-between px-8 py-4 w-full bg-white/70 backdrop-blur-sm shadow-sm">
-	<!-- ロゴ + タイトル：トップページへリンク -->
+<header class="fixed top-0 left-0 z-50 flex flex-col sm:flex-row items-center justify-between px-8 py-4 w-full bg-white/70 shadow-sm">
 	<a href="/" class="flex items-center space-x-4 hover:opacity-80 transition">
 		<img src="/log.png" alt="ロゴ" class="h-20 w-auto object-contain" />
-		<span class="text-2xl sm:text-3xl font-semibold text-gray-800">
-			非破壊センシング研究室
-		</span>
+		<span class="text-2xl sm:text-3xl font-semibold text-gray-800">非破壊センシング研究室</span>
 	</a>
-
-	<!-- ナビゲーション：現在ページは太字 -->
 	<nav class="flex space-x-8 mt-4 sm:mt-0 text-xl sm:text-2xl font-medium pr-10 sm:pr-20">
-		<a href="/Introduction" class="text-gray-500 hover:text-black" class:text-black={currentPath === '/Introduction'}>Introduction</a>
-		<a href="/Project" class="text-gray-500 hover:text-black" class:text-black={currentPath === '/Project'}>Project</a>
-		<a href="/Members" class="text-gray-500 hover:text-black" class:text-black={currentPath === '/Members'}>Members</a>
-		<a href="/Access" class="text-gray-500 hover:text-black" class:text-black={currentPath === '/Access'}>Access</a>
+		<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
+		<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+		<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
+		<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
 	</nav>
 </header>
 
-<!-- 本文 -->
-<div class="pt-40 bg-gradient-to-b from-white to-gray-100 min-h-screen px-6 sm:px-16 pb-24">
-	<h1 class="text-4xl sm:text-5xl font-bold text-center text-gray-800 mb-12 drop-shadow-md">
-		研究プロジェクト紹介
+<!-- タイトル（背景画像の上） -->
+<div class="pt-40 pb-16 px-6 sm:px-16">
+	<h1 class="text-4xl sm:text-5xl font-bold text-white text-left drop-shadow-xl">
+		Project
 	</h1>
+</div>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-		<!-- プロジェクト1 -->
-		<div class="bg-white rounded-2xl shadow-lg p-8 transition hover:shadow-xl">
-			<h2 class="text-2xl font-bold text-gray-700 mb-4">電磁波を用いた内部構造可視化</h2>
-			<p class="text-gray-600 leading-relaxed">
-				非接触で物体内部の欠陥や構造を検出するために、マイクロ波やテラヘルツ波など様々な周波数帯域の電磁波を用いて高精度な内部観察技術を開発しています。
+<!-- 白背景のプロジェクト紹介エリア -->
+<!-- 白背景のプロジェクト紹介エリア -->
+<div class="bg-white bg-opacity-90 px-6 sm:px-16 py-16">
+	<div class="max-w-6xl mx-auto space-y-20">
+		
+				<!-- プロジェクト1 -->
+		<div class="space-y-6">
+			<h2 class="text-2xl font-bold text-gray-800">
+				1.分析・センシング技術開発・データフュージョン
+			</h2>
+
+			<p class="text-gray-700 leading-relaxed text-left w-full">
+				文化財調査に適用するための計測装置の改良に加え，様々な周波数帯域の非破壊検査技術で得られたデータの比較解析を情報系の技術を用いて高度化します。
 			</p>
+
+			<div class="w-full">
+				<img
+					src="/prj1.png"
+					alt="分析・センシング"
+					class="rounded-lg shadow-md w-full h-auto object-cover"
+				/>
+				<p class="text-sm text-gray-600 text-center mt-2">
+					▲ マイクロ波センサーと解析結果の可視化イメージ
+				</p>
+			</div>
 		</div>
 
-		<!-- プロジェクト2 -->
-		<div class="bg-white rounded-2xl shadow-lg p-8 transition hover:shadow-xl">
-			<h2 class="text-2xl font-bold text-gray-700 mb-4">AIによるデータ解析と損傷推定</h2>
-			<p class="text-gray-600 leading-relaxed">
-				取得した反射・透過データを機械学習で解析し、構造物の劣化や損傷を早期に検出するAIモデルの構築に取り組んでいます。
+		<div class="space-y-6">
+			<h2 class="text-2xl font-bold text-gray-800">
+				2.考古出土品データ分類・解析への機械学習・AI技術の活用
+			</h2>
+		
+			<p class="text-gray-700 leading-relaxed text-left w-full">
+				出土品の分類に機械学習等を用いることにより新しい知見が得られ，地球規模での芸術文化の流れを俯瞰できる可能性があります。
 			</p>
+		
+			<!-- リンク -->
+			<div class="space-y-1 text-gray-700 text-left">
+				<p>(参考)インドからローマまで</p>
+				<a href="https://www.nabunken.go.jp/nabunkenblog/2018/06/20180615.html" class="underline hover:text-black" target="_blank" rel="noopener noreferrer">
+					https://www.nabunken.go.jp/nabunkenblog/2018/06/20180615.html
+				</a>
+				<a href="https://www.youtube.com/watch?v=QAn0OxNwaUA" class="underline hover:text-black" target="_blank" rel="noopener noreferrer">
+					https://www.youtube.com/watch?v=QAn0OxNwaUA
+				</a>
+			</div>
+		
+			<!-- 画像1 -->
+						<!-- 画像1 -->
+			<div class="space-y-2">
+				<img
+					src="/prj2-1.jpg"
+					alt="出土品AI解析1"
+					class="rounded-lg shadow-md w-full object-contain bg-white"
+				/>
+				<p class="text-lg font-semibold text-gray-700 text-center">
+					出土品分類に使用されたAIモデル図
+				</p>
+				<p class="text-sm text-gray-700 text-center">
+					AIによる出土品の分類プロセスを図示したもの。形状・模様などの特徴を自動抽出し、学習済みモデルが分類を行う。
+				</p>
+				<p class="text-sm text-gray-600 text-center">
+					<a
+						href="https://sitereports.nabunken.go.jp/ja/16564"
+						class="underline hover:text-black"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						https://sitereports.nabunken.go.jp/ja/16564
+					</a>
+				</p>
+				<div class="h-16"></div> <!-- 約64pxのスペースが空きます -->
+				
+			</div>
+					<!-- 画像2（縮小） -->
+				<div class="space-y-2 flex flex-col items-center mt-30">
+					<img
+						src="/prj2-2.png"
+						alt="出土品AI解析2"
+						class="rounded-lg shadow-md w-full max-w-md object-contain bg-white"
+					/>
+					<p class="text-lg font-semibold text-gray-700 text-center">
+						高野孟「最新・世界地図の読み方」
+					</p>
+					<p class="text-sm text-gray-600 text-center">
+						（講談社現代新書）に提示されている「受け皿としての日本」モデル
+					</p>
+				</div>
 		</div>
 
 		<!-- プロジェクト3 -->
-		<div class="bg-white rounded-2xl shadow-lg p-8 transition hover:shadow-xl">
-			<h2 class="text-2xl font-bold text-gray-700 mb-4">文化財の非破壊診断</h2>
-			<p class="text-gray-600 leading-relaxed">
-				文化財や歴史的構造物の保存状態を損なうことなく評価できる非破壊技術を用いて、保存管理に貢献する手法を提案しています。
-			</p>
+		<div class="flex flex-col md:flex-row items-start md:items-start gap-6 md:gap-12">
+			<div class="flex-1">
+				<h2 class="text-2xl font-bold text-gray-800 mb-2">3.石造文化財の表面劣化のメカニズム解明</h2>
+				<p class="text-gray-700 leading-relaxed w-full text-left">
+					温度湿度の変化が主な原因と考えられている石造文化財の表面劣化のメカニズムを理論的に解明し，遺跡など様々な作品の保存修復に貢献します。
+				</p>
+				<div class="mt-4 space-y-1 text-gray-700 w-full text-left">
+					<p>(参考) 石のあかぎれ</p>
+					<a
+						href="https://www.nabunken.go.jp/nabunkenblog/2021/09/20210915.html"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="underline hover:text-black"
+					>
+						https://www.nabunken.go.jp/nabunkenblog/2021/09/20210915.html
+					</a>
+				</div>
+			</div>
 		</div>
 
-		<!-- プロジェクト4 -->
-		<div class="bg-white rounded-2xl shadow-lg p-8 transition hover:shadow-xl">
-			<h2 class="text-2xl font-bold text-gray-700 mb-4">マルチモーダルセンシング</h2>
-			<p class="text-gray-600 leading-relaxed">
-				音響、温度、振動、電磁波など複数のセンシング情報を統合して解析することで、より高精度で安定的な内部構造の評価を目指します。
-			</p>
-		</div>
 	</div>
 </div>
