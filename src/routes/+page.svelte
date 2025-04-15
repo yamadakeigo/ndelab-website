@@ -48,29 +48,39 @@
 <!-- 全体構成 -->
 <div class="min-h-[200vh] relative">
 	<!-- ヘッダー -->
-	<header class="fixed top-0 left-0 z-50 flex flex-col sm:flex-row items-center justify-between px-8 py-4 w-full bg-white/70 backdrop-blur-sm shadow-sm">
-		<a href="/" class="flex items-center space-x-4 hover:opacity-80 transition">
-      <img src="/log.png" alt="ロゴ" class="h-20 w-auto object-contain" />
-      <span class="text-2xl sm:text-3xl font-semibold text-gray-800">非破壊センシング研究室</span>
-    </a>
-		<nav class="flex space-x-8 mt-4 sm:mt-0 text-xl sm:text-2xl font-medium pr-10 sm:pr-20">
-			<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
-			<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
-			<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
-			<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
-		</nav>
+	<header class="fixed top-0 left-0 z-50 w-full bg-white/70 backdrop-blur-sm shadow-sm px-6 sm:px-8 py-4">
+		<div class="flex flex-wrap items-center justify-between gap-y-4 sm:gap-y-0">
+			<!-- ロゴ＋タイトル -->
+			<a
+				href="/"
+				class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 sm:gap-4 mx-auto sm:mx-0 text-center"
+			>
+				<img src="/log.png" alt="ロゴ" class="h-20 w-auto object-contain" />
+				<span class="text-2xl sm:text-3xl font-semibold text-gray-800 break-words">
+					非破壊センシング研究室
+				</span>
+			</a>
+	
+			<!-- ナビゲーション -->
+			<nav class="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 text-xl sm:text-2xl font-medium w-full sm:w-auto">
+				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
+				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
+				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
+			</nav>
+		</div>
 	</header>
 
 	<!-- 空白 -->
 	<div class="h-screen"></div>
 
 	<!-- フッターセクション -->
-	<div class="flex items-center justify-center h-screen">
-		<h2 class="text-white/70 text-3xl font-medium drop-shadow-lg text-center leading-relaxed px-4">
+	<div class="flex items-center justify-center min-h-screen px-6">
+		<h2 class="text-white/80 text-base sm:text-lg md:text-2xl lg:text-3xl font-medium text-center leading-loose max-w-4xl">
 			外見だけではわからないモノの状態や内部構造を、<br />
 			様々な周波数帯域の電磁波を照射して反射・透過した信号を<br />
 			検出・画像化することにより観察する研究をしています。<br />
-			得られたデータを解析することで，モノの健全性を<br />
+			得られたデータを解析することで、モノの健全性を<br />
 			非破壊・非接触で診断することに有益な情報を抽出します。
 		</h2>
 	</div>
