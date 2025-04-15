@@ -46,7 +46,7 @@
 				<img
 					src="/prj1.png"
 					alt="分析・センシング"
-					class="rounded-lg shadow-md w-full h-auto object-cover"
+					class="rounded-lg shadow-md w-full max-w-2xl mx-auto object-contain bg-white"
 				/>
 				<p class="text-sm text-gray-600 text-center mt-2">
 					▲ マイクロ波センサーと解析結果の可視化イメージ
@@ -80,7 +80,7 @@
 				<img
 					src="/prj2-1.jpg"
 					alt="出土品AI解析1"
-					class="rounded-lg shadow-md w-full object-contain bg-white"
+					class="rounded-lg shadow-md w-full max-w-2xl mx-auto object-contain bg-white"
 				/>
 				<p class="text-lg font-semibold text-gray-700 text-center">
 					出土品分類に使用されたAIモデル図
