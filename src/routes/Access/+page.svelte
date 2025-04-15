@@ -13,16 +13,16 @@
 	<div class="flex flex-wrap items-center justify-between gap-y-4 px-2 sm:px-6">
 		<!-- ロゴとタイトル（縮小しても見切れず、中央揃え） -->
 		<!-- タイトル部分 -->
-<div class="flex items-center gap-3 flex-shrink min-w-0 mx-auto sm:mx-0">
-<img src="/log.png" alt="ロゴ" class="h-10 sm:h-14 w-auto object-contain flex-shrink-0" />
-
-<span
-	class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
-	style="max-width: 70vw;"
->
-	非破壊センシング研究室
-</span>
-</div>
+		<a href="/" class="flex items-center gap-3 flex-shrink min-w-0 mx-auto sm:mx-0 hover:opacity-80 transition">
+			<img src="/log.png" alt="ロゴ" class="h-10 sm:h-14 w-auto object-contain flex-shrink-0" />
+		
+			<span
+				class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
+				style="max-width: 70vw;"
+			>
+				非破壊センシング研究室
+			</span>
+		</a>
 
 		<!-- ナビゲーション：中央回り込み・横スクロール -->
 		<div class="w-full sm:w-auto overflow-x-auto">
