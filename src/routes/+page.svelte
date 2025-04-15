@@ -47,30 +47,35 @@
 
 <!-- 全体構成 -->
 <div class="min-h-[200vh] relative">
-	<!-- ヘッダー -->
-	<header class="fixed top-0 left-0 z-50 w-full bg-white/70 backdrop-blur-sm shadow-sm px-6 sm:px-8 py-4">
-		<div class="flex flex-wrap items-center justify-between gap-y-4 sm:gap-y-0">
-			<!-- ロゴ＋タイトル -->
-			<a
-				href="/"
-				class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 sm:gap-4 mx-auto sm:mx-0 text-center"
-			>
-				<img src="/log.png" alt="ロゴ" class="h-20 w-auto object-contain" />
-				<span class="font-semibold text-gray-800 break-keep text-xl sm:text-2xl md:text-3xl">
-					非破壊センシング研究室
-				</span>
-			</a>
+	<header class="fixed top-0 left-0 z-50 w-full bg-white/70 shadow-sm px-4 py-3">
+		<div class="flex flex-wrap items-center justify-between gap-y-4 px-2 sm:px-6">
+			<!-- ロゴとタイトル（縮小しても見切れず、中央揃え） -->
+			<!-- タイトル部分 -->
+<div class="flex items-center gap-3 flex-shrink min-w-0 mx-auto sm:mx-0">
+	<img src="/log.png" alt="ロゴ" class="h-10 sm:h-14 w-auto object-contain flex-shrink-0" />
+
+	<span
+		class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
+		style="max-width: 70vw;"
+	>
+		非破壊センシング研究室
+	</span>
+</div>
 	
-			<!-- ナビゲーション -->
-			<nav class="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 text-xl sm:text-2xl font-medium w-full sm:w-auto">
-				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
-				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
-				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
-				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
-			</nav>
+			<!-- ナビゲーション：中央回り込み・横スクロール -->
+			<div class="w-full sm:w-auto overflow-x-auto">
+				<nav
+					class="flex flex-nowrap justify-center sm:justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap"
+				>
+					<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
+					<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+					<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
+					<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
+				</nav>
+			</div>
 		</div>
 	</header>
-
+	
 	<!-- 空白 -->
 	<div class="h-screen"></div>
 
