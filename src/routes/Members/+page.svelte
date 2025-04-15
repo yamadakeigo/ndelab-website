@@ -98,7 +98,7 @@
 				<div class="space-y-2 max-w-3xl">
 					<h3 class="text-xl font-semibold text-gray-800">山田 圭吾（Yamada Keigo）</h3>
 					<div class="h-2"></div>
-					<p class="text-gray-700 text-base leading-relaxed">学部では表情解析による感情推定をしていました。趣味は映画鑑賞、音楽鑑賞、将棋の対極を観戦など色々です。よろしくお願いします!</p>
+					<p class="text-gray-700 text-base leading-relaxed">学部では表情解析による感情推定をしていました。趣味は映画鑑賞、音楽鑑賞、聴く読書など色々です。よろしくお願いします!</p>
 					<div class="h-2"></div>
 					<p class="text-gray-600 text-base">研究テーマ：画像認識による金属遺物の腐食度判定と脱塩処理の必要性予測</p>
 					<div class="h-5"></div>
