@@ -52,7 +52,7 @@
 			<div class="flex flex-col md:flex-row gap-6 items-start">
 				<img src="/members/prof.jpg" alt="教員写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
 				<div class="space-y-2 max-w-3xl">
-					<h3 class="text-xl font-semibold text-gray-800">福永 香（Fkunaga Kaori）</h3>
+					<h3 class="text-xl font-semibold text-gray-800">福永 香（Fukunaga Kaori）</h3>
 					<div class="h-2"></div>
 					<p class="text-gray-700 text-base leading-relaxed">〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
 					<div class="h-2"></div>
@@ -140,7 +140,7 @@
 			<div class="flex flex-col md:flex-row gap-6 items-start">
 				<img src="/members/b4_suzuki.jpg" alt="B4写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
 				<div class="space-y-2 max-w-3xl">
-					<h3 class="text-xl font-semibold text-gray-800">富松 大輝（Tomimatu Haruki）</h3>
+					<h3 class="text-xl font-semibold text-gray-800">富松 大輝（Tomimatsu Haruki）</h3>
 					<div class="h-2"></div>
 					<p class="text-gray-700 text-base leading-relaxed">〇〇〇〇〇〇〇〇〇〇〇〇〇〇。</p>
 					<div class="h-2"></div>
