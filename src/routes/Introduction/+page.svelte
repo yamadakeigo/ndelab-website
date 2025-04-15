@@ -122,11 +122,11 @@
 			</p>
 
 			<div class="space-y-2">
-			<img
+				<img
 				src="/zu2.jpg"
 				alt="文化財科学研究拠点"
-				class="rounded-lg shadow-md max-w-xl mx-auto object-contain bg-white"
-			/>
+				class="rounded-lg shadow-md w-full max-w-3xl mx-auto object-contain bg-white"
+			  />
 
 			<div class="h-16"></div> <!-- 約64pxのスペースが空きます -->
 		</div>		<!-- 画像2（縮小） -->

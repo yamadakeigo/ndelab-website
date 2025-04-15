@@ -56,7 +56,7 @@
 				class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 sm:gap-4 mx-auto sm:mx-0 text-center"
 			>
 				<img src="/log.png" alt="ロゴ" class="h-20 w-auto object-contain" />
-				<span class="text-2xl sm:text-3xl font-semibold text-gray-800 break-words">
+				<span class="font-semibold text-gray-800 break-keep text-xl sm:text-2xl md:text-3xl">
 					非破壊センシング研究室
 				</span>
 			</a>
