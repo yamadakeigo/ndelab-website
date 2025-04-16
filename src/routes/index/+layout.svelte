@@ -17,6 +17,7 @@
 	<nav class="flex space-x-8 mt-4 sm:mt-0 text-xl sm:text-2xl font-medium pr-10 sm:pr-20">
 		<a href="/Introduction" class:text-black={currentPath === '/Introduction'} class="text-gray-500 hover:text-black">Introduction</a>
 		<a href="/Project" class:text-black={currentPath === '/Project'} class="text-gray-500 hover:text-black">Project</a>
+		<a href="/Publications" class:text-black={currentPath === '/Project'} class="text-gray-500 hover:text-black">Publications</a>
 		<a href="/Members" class:text-black={currentPath === '/Members'} class="text-gray-500 hover:text-black">Members</a>
 		<a href="/Access" class:text-black={currentPath === '/Access'} class="text-gray-500 hover:text-black">Access</a>
 	</nav>

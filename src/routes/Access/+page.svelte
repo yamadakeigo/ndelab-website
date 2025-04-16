@@ -31,6 +31,7 @@
 			>
 				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
 				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+				<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
 				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
 				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
 			</nav>
@@ -95,7 +96,7 @@
 <!-- フッター（E-Mail & コピーライト） -->
 <footer class="bg-gray-300 py-8">
 	<div class="max-w-4xl mx-auto text-center text-sm text-gray-600 space-y-2">
-		<p>E-Mail : XXXX@XXXX</p>
+		
 		<p>© YOKOHAMA National University All rights reserved.</p>
 	</div>
 </footer>

@@ -29,6 +29,7 @@
 			>
 				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
 				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+				<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
 				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
 				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
 			</nav>
@@ -54,7 +55,7 @@
 			</h2>
 
 			<p class="text-gray-700 leading-relaxed text-left w-full">
-				文化財科学は、人類共通の財産である文化財を次世代に伝えるため、文化財が内包する価値を顕在化するとともに破壊・破損・劣化後の作品の修復保存に役立つ調査・診断を行う学問で、EU諸国では応用物理、地学など科学技術系の研究分野として扱われています。
+				文化財科学は人類共通の財産である文化財を科学的に調査・診断する学問で，EU諸国では応用物理、地学など科学技術系の研究分野として扱われています。対象が唯一無二の作品であることから，非破壊・非接触で内部構造を観察したり，材料を分析できる電磁波が広く用いられています。調査の目的は，主に「作品を知るため」と「修復前の状態検査」です。
 			</p>
 		</div>
 
@@ -103,14 +104,22 @@
 				</div>
 				<!-- 左下にRefを表示（小見出しと左端を揃え、下に余白） -->
 				<div class="text-sm text-gray-600 mt-2 mb-8 text-left">
-					Ref: M. Leona, P. S. Londero, J. Perry, K. Fukunaga, G. H. Bailey, C. Hale<br />
+					M. Leona, P. S. Londero, J. Perry, K. Fukunaga, G. H. Bailey, C. Hale, Designing Nature: Ogata Kōrin's Technical Choices in Irises at Yatsuhashi, Science and Art The Painted Surface, Royal Society of Chemistry, pp. 336-353, 2014.<br />
 					<a
 						href="https://doi.org/10.1039/9781839161957-00336"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="underline hover:text-black break-all"
 					>
-						DOI: https://doi.org/10.1039/9781839161957-00336 (2014)
+						DOI: https://doi.org/10.1039/9781839161957-00336 (2014)<br />
+					</a>
+					<a
+						href="https://www.nict.go.jp/press/2012/10/30-1.html"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="underline hover:text-black break-all"
+					>
+						NICT 報道発表: https://www.nict.go.jp/press/2012/10/30-1.html<br />
 					</a>
 				</div>
 			</div>
@@ -122,38 +131,48 @@
 					2.作品を後世に伝えるため：
 				</h3>
 				<p class="text-gray-700 leading-relaxed">
-					人間が手術前に時間と予算があれば様々な検査をするように、今の構造・材料の状態（＝症状）に加え、過去の修復履歴（＝病歴）も知る必要がある。その記録は次世代の修復のための貴重な記録となる。
+					人間が手術前に時間と予算があれば様々な検査をするように，破壊・破損・劣化後の作品の構造・材料の状態（＝症状）に加え、過去の修復履歴（＝病歴）を知るために，調査診断を行い，その記録は次世代の修復のための貴重な記録となります。例えば，Galleria degli Uffizi所蔵のGiottoのテンペラ画の作品は，石膏下地が2層あることがわかりました。
 				</p>
+			</div>
+
+			<div class="mt-6">
+				<img
+					src="/giotto.jpg"
+					alt="尾形光琳の技法分析図"
+					class="rounded-lg shadow-md w-full max-w-2xl mx-auto object-contain bg-white"
+				/>
+				<p class="text-sm text-gray-600 text-center mt-2">
+					ウフィッツィ美術館（Firenze, Italia)でのジョット作「バディア祭壇画」の調査例
+				</p>
+			</div>
+			<div class="text-sm text-gray-600 mt-2 mb-8 text-left">
+				M. Leona, P. S. Londero, J. Perry, K. Fukunaga, G. H. Bailey, C. Hale, Designing Nature: Ogata Kōrin's Technical Choices in Irises at Yatsuhashi, Science and Art The Painted Surface, Royal Society of Chemistry, pp. 336-353, 2014.<br />
+				<a
+					href="https://www.mandragora.it/prodotto/giottoil-restauro-del-polittico-di-badia/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="underline hover:text-black break-all"
+				>
+					Ref: A. Tartuferi ed. "Giotto Il restauro del Polittico di Badia", Mandragola, 2009. ISBN: 978-88-7461-174-4 (2014)<br />
+				</a>
+				<a
+					href="https://www.nict.go.jp/press/2009/02/25-1.html"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="underline hover:text-black break-all"
+				>
+					参考の報道発表: https://www.nict.go.jp/press/2009/02/25-1.html<br />
+				</a>
 			</div>
 		</div>
 
-		<div class="space-y-6">
-			<h2 class="text-2xl font-bold text-gray-800">
-				横浜国立大学の文化財科学研究拠点
-			</h2>
 		
-			<p class="text-gray-700 leading-relaxed text-left w-full">
-				総合大学である横浜国立大学には、分析・センシング技術の研究者が多く、様々な計測法を比較・統合できます。また、AI応用等、情報系の研究者の協力により実験データと人文系の知識を融合することで人類が地球上で創造してきた文化の歴史を時空間で俯瞰する「地球文化財学」へ発展させることができます。
-			</p>
-
-			<div class="space-y-2">
-				<img
-				src="/zu2.jpg"
-				alt="文化財科学研究拠点"
-				class="rounded-lg shadow-md w-full max-w-3xl mx-auto object-contain bg-white"
-			  />
-
-			<div class="h-16"></div> <!-- 約64pxのスペースが空きます -->
-		</div>		<!-- 画像2（縮小） -->
-				
-		</div>
 
 	</div>
 </div>
 <!-- フッター（E-Mail & コピーライト） -->
 <footer class="bg-gray-300 py-8">
 	<div class="max-w-4xl mx-auto text-center text-sm text-gray-600 space-y-2">
-		<p>E-Mail : XXXX@XXXX</p>
 		<p>© YOKOHAMA National University All rights reserved.</p>
 	</div>
 </footer>

@@ -29,6 +29,7 @@
 			>
 				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
 				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+				<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
 				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
 				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
 			</nav>
@@ -50,14 +51,9 @@
 		<section class="space-y-8">
 			<h2 class="text-2xl sm:text-3xl font-bold text-gray-800 border-b pb-2">教員</h2>
 			<div class="flex flex-col md:flex-row gap-6 items-start">
-				<img src="/members/prof.jpg" alt="教員写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
 				<div class="space-y-2 max-w-3xl">
 					<h3 class="text-xl font-semibold text-gray-800">福永 香（Fukunaga Kaori）</h3>
-					<div class="h-2"></div>
-					<p class="text-gray-700 text-base leading-relaxed">〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
-					<div class="h-2"></div>
-					<p class="text-gray-600 text-base">研究テーマ：〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
-					<div class="h-5"></div>
+					
 				</div>
 			</div>
 		</section>
@@ -154,7 +150,6 @@
 <!-- フッター（E-Mail & コピーライト） -->
 <footer class="bg-gray-300 py-8">
 	<div class="max-w-4xl mx-auto text-center text-sm text-gray-600 space-y-2">
-		<p>E-Mail : XXXX@XXXX</p>
 		<p>© YOKOHAMA National University All rights reserved.</p>
 	</div>
 </footer>
