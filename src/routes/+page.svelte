@@ -53,7 +53,6 @@
 			<!-- タイトル部分 -->
 			<a href="/" class="flex items-center gap-3 flex-shrink min-w-0 mx-auto sm:mx-0 hover:opacity-80 transition">
 				<img src="/log.png" alt="ロゴ" class="h-10 sm:h-14 w-auto object-contain flex-shrink-0" />
-			
 				<span
 					class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
 					style="max-width: 70vw;"
@@ -61,18 +60,15 @@
 					非破壊センシング研究室
 				</span>
 			</a>
-	
 			<!-- ナビゲーション：中央回り込み・横スクロール -->
 			<div class="w-full sm:w-auto overflow-x-auto">
 				<nav
-					class="flex flex-nowrap justify-center sm:justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap"
-				>
+					class="flex flex-nowrap justify-center sm:justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap">
 					<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
 					<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
 					<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
 					<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
-					<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
-					
+					<a href="/Access" class="text-gray-500 hover:text-black">Access</a>	
 				</nav>
 			</div>
 		</div>
@@ -83,17 +79,14 @@
 
 	<!-- フッターセクション -->
 	<div class="flex items-center justify-center min-h-screen px-4 sm:px-8">
-		<h2
-  class="text-white/90 font-medium text-center leading-relaxed max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl"
-  style="font-size: clamp(0.5rem, 2.5vw, 1.75rem); white-space: pre-line;"
->
-  外見だけではわからないモノの状態や内部構造を、<br />
-  様々な周波数帯域の電磁波を照射して反射・透過した信号を<br />
-  検出・画像化することにより観察する研究をしています。<br />
-  得られたデータを解析することで、モノの健全性を<br />
-  非破壊・非接触で診断することに有益な情報を抽出します。
-</h2>
-	  </div>
+		<h2 class="text-white/90 font-medium text-center leading-relaxed max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl" style="font-size: clamp(0.5rem, 2.5vw, 1.75rem); white-space: pre-line;">
+  			外見だけではわからないモノの状態や内部構造を、<br />
+  			様々な周波数帯域の電磁波を照射して反射・透過した信号を<br />
+			検出・画像化することにより観察する研究をしています。<br />
+  			得られたデータを解析することで、モノの健全性を<br />
+  			非破壊・非接触で診断することに有益な情報を抽出します。
+		</h2>
+	</div>
 
 	<!-- Topicsセクション -->
 	<section class="relative z-10">
@@ -176,13 +169,10 @@
 			  href="https://www.nabunken.go.jp/"
 			  target="_blank"
 			  rel="noopener noreferrer"
-			  class="w-[280px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center overflow-hidden"
-			>
-			  <p class="text-xl font-extrabold text-gray-600 tracking-tight leading-snug break-words text-wrap">
-				奈良文化財研究所
-			  </p>
+			  class="w-[280px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center overflow-hidden">
+			<p class="text-xl font-extrabold text-gray-600 tracking-tight leading-snug break-words text-wrap">奈良文化財研究所</p>
 			</a>
-		  </div>
+		</div>
 		
 	</div>
 </section>
