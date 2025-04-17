@@ -138,28 +138,51 @@
 	<div class="bg-white py-24 px-6 sm:px-16">
 		<h2 class="text-4xl sm:text-5xl font-bold text-gray-800 text-center mb-12">Links</h2>
 		
-		<div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-6">
+		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 justify-items-center">
 			<a
-				href="https://ims.ynu.ac.jp/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="w-[300px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center"
+			  href="https://www.es.ynu.ac.jp/index.html"
+			  target="_blank"
+			  rel="noopener noreferrer"
+			  class="w-[280px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center overflow-hidden"
 			>
-				<p class="text-2xl font-extrabold text-gray-600 tracking-tight leading-relaxed">
-					横浜国立大学<br />総合学術高等研究院
-				</p>
+			  <p class="text-xl font-extrabold text-gray-600 tracking-tight leading-snug break-words text-wrap">
+				横浜国立大学<br />理工学部
+			  </p>
 			</a>
+		  
 			<a
-				href="https://www.nabunken.go.jp/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="w-[300px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center"
+			  href="https://www.fse.ynu.ac.jp/"
+			  target="_blank"
+			  rel="noopener noreferrer"
+			  class="w-[280px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center overflow-hidden"
 			>
-				<p class="text-2xl font-extrabold text-gray-600 tracking-tight leading-relaxed">
-					奈良文化財研究所
-				</p>
+			  <p class="text-xl font-extrabold text-gray-600 tracking-tight leading-snug break-words text-wrap">
+				横浜国立大学大学院<br />理工学府・工学研究院
+			  </p>
 			</a>
-		</div>
+		  
+			<a
+			  href="https://ece.ynu.ac.jp/index.html"
+			  target="_blank"
+			  rel="noopener noreferrer"
+			  class="w-[280px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center overflow-hidden"
+			>
+			  <p class="text-xl font-extrabold text-gray-600 tracking-tight leading-snug break-words text-wrap">
+				横浜国立大学<br />数物・電子情報系
+			  </p>
+			</a>
+		  
+			<a
+			  href="https://www.nabunken.go.jp/"
+			  target="_blank"
+			  rel="noopener noreferrer"
+			  class="w-[280px] h-[120px] bg-white rounded-2xl shadow-md p-6 text-center transition hover:bg-gray-100 border border-gray-300 hover:border-gray-500 flex items-center justify-center overflow-hidden"
+			>
+			  <p class="text-xl font-extrabold text-gray-600 tracking-tight leading-snug break-words text-wrap">
+				奈良文化財研究所
+			  </p>
+			</a>
+		  </div>
 		
 	</div>
 </section>

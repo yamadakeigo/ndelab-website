@@ -64,26 +64,26 @@
 	
 			<!-- 福地 -->
 			<div class="flex flex-col md:flex-row gap-6 items-start">
-				<img src="/members/m1_yamada.jpg" alt="M1写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
+				<img src="/FukuchiTshubasa.png" alt="M1写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
 				<div class="space-y-2 max-w-3xl">
 					<h3 class="text-xl font-semibold text-gray-800">福地 翼（Fukuchi Tsubasa）</h3>
 					<div class="h-2"></div>
-					<p class="text-gray-700 text-base leading-relaxed">〇〇〇〇〇〇〇〇〇〇〇〇〇〇。</p>
+					<p class="text-gray-700 text-base leading-relaxed">自己紹介：<br />LDHとBMSGのアーティストにハマってます🔥</p>
 					<div class="h-2"></div>
-					<p class="text-gray-600 text-base">研究テーマ：〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+					<p class="text-gray-600 text-base">研究テーマ：<br />識別性能向上のための Co-Attention Fusion Network を用いたマルチビュー画像分類</p>
 					<div class="h-5"></div>
 				</div>
 			</div>
 	
 			<!-- 松永 -->
 			<div class="flex flex-col md:flex-row gap-6 items-start">
-				<img src="/members/m1_yamada.jpg" alt="M1写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
+				<img src="/MatshunagaJotaro.png" alt="M1写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
 				<div class="space-y-2 max-w-3xl">
 					<h3 class="text-xl font-semibold text-gray-800">松永 丞太郎（Matsunaga Jotaro）</h3>
 					<div class="h-2"></div>
-					<p class="text-gray-700 text-base leading-relaxed">〇〇〇〇〇〇〇〇〇〇〇〇〇〇。</p>
+					<p class="text-gray-700 text-base leading-relaxed">自己紹介：<br />鳥取からはるばるやってきました。趣味はテニス、家では最近、薬屋見てます。よろしくお願いします。</p>
 					<div class="h-2"></div>
-					<p class="text-gray-600 text-base">研究テーマ：〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+					<p class="text-gray-600 text-base">研究テーマ：<br />文化財をいかに人に興味を持たせ存続させていくか</p>
 					<div class="h-5"></div>
 				</div>
 			</div>
@@ -94,9 +94,9 @@
 				<div class="space-y-2 max-w-3xl">
 					<h3 class="text-xl font-semibold text-gray-800">山田 圭吾（Yamada Keigo）</h3>
 					<div class="h-2"></div>
-					<p class="text-gray-700 text-base leading-relaxed">学部では表情解析による感情推定をしていました。趣味は映画鑑賞、音楽鑑賞、聴く読書など色々です。よろしくお願いします!</p>
+					<p class="text-gray-700 text-base leading-relaxed">自己紹介：<br />学部では表情解析による感情推定をしていました。趣味は映画鑑賞、音楽鑑賞、聴く読書など色々です。よろしくお願いします!</p>
 					<div class="h-2"></div>
-					<p class="text-gray-600 text-base">研究テーマ：画像認識による金属遺物の腐食度判定と脱塩処理の必要性予測</p>
+					<p class="text-gray-600 text-base">研究テーマ：<br />画像認識による金属遺物の腐食度判定と脱塩処理の必要性予測</p>
 					<div class="h-5"></div>
 				</div>
 			</div>
