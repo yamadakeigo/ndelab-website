@@ -24,6 +24,8 @@
 	const sortedTopics = [...allTopics].sort((a, b) => b.date.localeCompare(a.date));
 	const latestTopics = sortedTopics.slice(0, 4);
 	const olderTopics = sortedTopics.slice(4);
+
+	let isOpen = false;
 </script>
 
 <style>
@@ -47,36 +49,50 @@
 
 <!-- 全体構成 -->
 <div class="min-h-[200vh] relative">
-	<header class="fixed top-0 left-0 z-50 w-full bg-white/70 shadow-sm px-4 py-3">
-		<div class="flex flex-wrap items-center justify-between gap-y-4 px-2 sm:px-6">
-			<!-- ロゴとタイトル（縮小しても見切れず、中央揃え） -->
-			<!-- タイトル部分 -->
-			<a href="/" class="flex items-center gap-3 flex-shrink min-w-0 mx-auto sm:mx-0 hover:opacity-80 transition">
-				<img src="/log.png" alt="ロゴ" class="h-10 sm:h-14 w-auto object-contain flex-shrink-0" />
-				<span
-					class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
-					style="max-width: 70vw;"
-				>
-					非破壊センシング研究室
-				</span>
-			</a>
-			<!-- ナビゲーション：中央回り込み・横スクロール -->
-			<div class="w-full sm:w-auto overflow-x-auto">
-				<nav
-					class="flex flex-nowrap justify-center sm:justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap">
-					<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
-					<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
-					<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
-					<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
-					<a href="/Access" class="text-gray-500 hover:text-black">Access</a>	
-				</nav>
-			</div>
-		</div>
-	</header>
+	
 	
 	<!-- 空白 -->
 	<div class="h-screen"></div>
-
+	<header class="fixed top-0 left-0 z-50 w-full bg-white/70 shadow-sm px-4 py-3">
+		<div class="flex flex-wrap items-center justify-between gap-y-4 px-2 sm:px-6">
+			<a href="/" class="flex items-center gap-3 flex-shrink min-w-0 mx-auto sm:mx-0 hover:opacity-80 transition">
+				<img src="/log.png" alt="ロゴ" class="h-10 sm:h-14 w-auto object-contain flex-shrink-0" />
+				<span class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
+					style="max-width: 70vw;">非破壊センシング研究室</span>
+			</a>
+	
+			<!-- ハンバーガーボタン -->
+			<button class="sm:hidden text-2xl text-gray-800" on:click={() => isOpen = !isOpen}>
+				{#if isOpen}
+					&times; <!-- 閉じる (×) -->
+				{:else}
+					&#9776; <!-- ハンバーガー (≡) -->
+				{/if}
+			</button>
+	
+			<!-- ナビゲーション（PC表示） -->
+			<nav class="hidden sm:flex flex-nowrap justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap">
+				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
+				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+				<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
+				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
+				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
+			</nav>
+		</div>
+	
+		<!-- ナビゲーション（モバイル表示） -->
+		{#if isOpen}
+			<div class="sm:hidden mt-2 px-6 pb-4">
+				<nav class="flex flex-col space-y-2 text-base font-medium text-gray-700">
+					<a href="/Introduction" class="hover:text-black">Introduction</a>
+					<a href="/Project" class="hover:text-black">Project</a>
+					<a href="/Publications" class="hover:text-black">Publications</a>
+					<a href="/Members" class="hover:text-black">Members</a>
+					<a href="/Access" class="hover:text-black">Access</a>
+				</nav>
+			</div>
+		{/if}
+	</header>
 	<!-- フッターセクション -->
 	<div class="flex items-center justify-center min-h-screen px-4 sm:px-8">
 		<h2 class="text-white/90 font-medium text-center leading-relaxed max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl" style="font-size: clamp(0.5rem, 2.5vw, 1.75rem); white-space: pre-line;">
@@ -131,7 +147,7 @@
 	<div class="bg-white py-24 px-6 sm:px-16">
 		<h2 class="text-4xl sm:text-5xl font-bold text-gray-800 text-center mb-12">Links</h2>
 		
-		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 justify-items-center">
+		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
 			<a
 			  href="https://www.es.ynu.ac.jp/index.html"
 			  target="_blank"

@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	$: currentPath = $page.url.pathname;
+	let isOpen = false;
+	
 </script>
 
 <!-- 背景画像（ぼかしなし） -->
@@ -9,32 +11,43 @@
 <!-- ヘッダー -->
 <header class="fixed top-0 left-0 z-50 w-full bg-white/70 shadow-sm px-4 py-3">
 	<div class="flex flex-wrap items-center justify-between gap-y-4 px-2 sm:px-6">
-		<!-- ロゴとタイトル（縮小しても見切れず、中央揃え） -->
-		<!-- タイトル部分 -->
 		<a href="/" class="flex items-center gap-3 flex-shrink min-w-0 mx-auto sm:mx-0 hover:opacity-80 transition">
 			<img src="/log.png" alt="ロゴ" class="h-10 sm:h-14 w-auto object-contain flex-shrink-0" />
-		
-			<span
-				class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
-				style="max-width: 70vw;"
-			>
-				非破壊センシング研究室
-			</span>
+			<span class="font-semibold text-gray-800 truncate text-[1rem] xs:text-[1.1rem] sm:text-[1.3rem] md:text-2xl lg:text-3xl"
+				style="max-width: 70vw;">非破壊センシング研究室</span>
 		</a>
 
-		<!-- ナビゲーション：中央回り込み・横スクロール -->
-		<div class="w-full sm:w-auto overflow-x-auto">
-			<nav
-				class="flex flex-nowrap justify-center sm:justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap"
-			>
-				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
-				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
-				<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
-				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
-				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
+		<!-- ハンバーガーボタン -->
+		<button class="sm:hidden text-2xl text-gray-800" on:click={() => isOpen = !isOpen}>
+			{#if isOpen}
+				&times; <!-- 閉じる (×) -->
+			{:else}
+				&#9776; <!-- ハンバーガー (≡) -->
+			{/if}
+		</button>
+
+		<!-- ナビゲーション（PC表示） -->
+		<nav class="hidden sm:flex flex-nowrap justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap">
+			<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
+			<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
+			<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
+			<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
+			<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
+		</nav>
+	</div>
+
+	<!-- ナビゲーション（モバイル表示） -->
+	{#if isOpen}
+		<div class="sm:hidden mt-2 px-6 pb-4">
+			<nav class="flex flex-col space-y-2 text-base font-medium text-gray-700">
+				<a href="/Introduction" class="hover:text-black">Introduction</a>
+				<a href="/Project" class="hover:text-black">Project</a>
+				<a href="/Publications" class="hover:text-black">Publications</a>
+				<a href="/Members" class="hover:text-black">Members</a>
+				<a href="/Access" class="hover:text-black">Access</a>
 			</nav>
 		</div>
-	</div>
+	{/if}
 </header>
 <!-- タイトル（背景画像の上） -->
 <div class="pt-40 pb-16 px-6 sm:px-16">
@@ -54,7 +67,7 @@
 
 			<p class="text-gray-700 leading-relaxed text-left w-full">
 				文化財の調査は，工業製品の検査のようにサンプルを抜き出して分解調査をするような破壊検査をすることができません。そのため，非破壊非接触で物体の内部を観察したり材料を調査できる電磁波が用いられます。構造を観察する場合，透過する深さと分解能は周波数に依存するため，対象に応じて最適な周波数を選択します。例えば地中の遺構や埋蔵物の調査には，分解能は低くても深くまで透過する電波が用いられ，絵画のニス層は光断層トモグラフィーが用いられます。
-本プロジェクトでは，適用するための計測装置の改良に加え，様々な周波数帯域の非破壊検査技術で得られたデータの比較解析を情報系の技術を用いて高度化します。
+				本プロジェクトでは，適用するための計測装置の改良に加え，様々な周波数帯域の非破壊検査技術で得られたデータの比較解析を情報系の技術を用いて高度化します。
 			</p>
 
 			<div class="w-full">
