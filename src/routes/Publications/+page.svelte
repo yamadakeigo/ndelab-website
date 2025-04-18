@@ -122,7 +122,6 @@
 <div class="bg-white bg-opacity-90 px-6 sm:px-16 py-16">
 	<div class="max-w-6xl mx-auto space-y-16">
 
-		<h2 class="text-4xl sm:text-5xl font-bold text-gray-800 text-center mb-12">Publications</h2>
 
 		{#each categories as category}
 			<section>
