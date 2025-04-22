@@ -120,13 +120,13 @@
 	
 			<!-- 糟谷 -->
 			<div class="flex flex-col md:flex-row gap-6 items-start">
-				<img src="/members/b4_suzuki.jpg" alt="B4写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
+				<img src="KasutaSora.png" alt="B4写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
 				<div class="space-y-2 max-w-3xl">
 					<h3 class="text-xl font-semibold text-gray-800">糟谷 空（Kasuya Sora）</h3>
 					<div class="h-2"></div>
-					<p class="text-gray-700 text-base leading-relaxed">〇〇〇〇〇〇〇〇〇〇〇〇〇〇。</p>
+					<p class="text-gray-700 text-base leading-relaxed">山登りとゲームが好きです。</p>
 					<div class="h-2"></div>
-					<p class="text-gray-600 text-base">研究テーマ：〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+					<p class="text-gray-600 text-base">研究テーマ：検討中</p>
 					<div class="h-5"></div>
 				</div>
 			</div>
