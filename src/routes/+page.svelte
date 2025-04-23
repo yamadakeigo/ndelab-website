@@ -74,7 +74,7 @@
 			<nav class="hidden sm:flex flex-nowrap justify-end gap-x-4 sm:gap-x-6 text-[1rem] sm:text-lg md:text-xl font-medium whitespace-nowrap">
 				<a href="/Introduction" class="text-gray-500 hover:text-black">Introduction</a>
 				<a href="/Project" class="text-gray-500 hover:text-black">Project</a>
-				<a href="/Publications" class="text-gray-500 hover:text-black">Publications</a>
+				<!-- <a href="/Publications" class="text-gray-500 hover:text-black">Publications</a> -->
 				<a href="/Members" class="text-gray-500 hover:text-black">Members</a>
 				<a href="/Access" class="text-gray-500 hover:text-black">Access</a>
 			</nav>
@@ -86,7 +86,7 @@
 				<nav class="flex flex-col space-y-2 text-base font-medium text-gray-700">
 					<a href="/Introduction" class="hover:text-black">Introduction</a>
 					<a href="/Project" class="hover:text-black">Project</a>
-					<a href="/Publications" class="hover:text-black">Publications</a>
+					<!-- <a href="/Publications" class="hover:text-black">Publications</a> -->
 					<a href="/Members" class="hover:text-black">Members</a>
 					<a href="/Access" class="hover:text-black">Access</a>
 				</nav>
