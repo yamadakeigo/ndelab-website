@@ -146,7 +146,7 @@
 	
 			<!-- 富松 -->
 			<div class="flex flex-col md:flex-row gap-6 items-start">
-				<img src="/members/b4_suzuki.jpg" alt="B4写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
+				<img src="TomimatsuHaruki.png" alt="B4写真" class="w-40 h-40 object-cover rounded-lg shadow-md" />
 				<div class="space-y-2 max-w-3xl">
 					<h3 class="text-xl font-semibold text-gray-800">富松 大輝（Tomimatsu Haruki）</h3>
 					<div class="h-2"></div>
